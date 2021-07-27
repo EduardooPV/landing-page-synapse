@@ -1,0 +1,29 @@
+:root {
+    --orange-light: #FEC024;
+    --orange-dark: #F89D24;
+    --gray-light: #B5B5B5;
+    --gray-dark: #686868;
+    --white: #FFFFFF;
+    --black: #191919;
+}
+
+/*
+    H1: # FFF 54px
+    H2: # FFF 46px
+    H3: # FFF 32px
+    H4: # FFF 24px
+
+    SUB: # F89D24 32px
+    SUB: # F89D24 24px
+    SUB: # F89D24 14px
+
+    BODY: # B5B5B5 18px
+    BODY: # B5B5B5 16px
+
+    Tablet Multiplicar por 14/16 
+    Mobile Multiplicar por 12/16
+
+    Ao clicar no botão "Tenho Interesse", deverá abrir o modal com formulário;
+
+    Utilizar SASS como pré-processador de CSS.
+*/
