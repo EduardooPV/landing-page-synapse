@@ -27,3 +27,156 @@
 
     Utilizar SASS como pré-processador de CSS.
 */
+
+.square {
+    position: absolute;
+    left: 1.2rem;
+    width:110px;
+    height:110px;
+    border-right: 1px solid #FEC024;
+    border-bottom: 1px solid #FEC024;
+    border-left: 1px solid #FEC024;
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+
+    background: #2C2C2C;
+    background: -webkit-radial-gradient(top right, #2C2C2C, #1A1A1A);
+    background: -moz-radial-gradient(top right, #2C2C2C, #1A1A1A);
+    background: radial-gradient(to bottom left, #2C2C2C, #1A1A1A);
+}
+
+.home__content {
+    margin: 0 auto;  
+
+    height: 100%;
+    width: 77%;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+
+    text-align: center;
+}
+
+    .home__content img {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+
+
+    .home__content h1 {
+            color: var(--white);
+            font-size: 2.6rem;
+            letter-spacing:0.85px;
+            text-transform:capitalize;
+            line-height: 1.3;
+        }
+
+    .home__content h2 {
+        color: var(--gray-light);
+        font-size:  0.9rem;
+        font-weight: 300;
+        line-height: 2.3;
+    }
+
+.button__purchase {
+    display: flex;
+    flex-direction: column;
+}
+
+    .button__purchase a {
+        padding: 1.2rem 1.6rem;
+
+        border-radius: 5px;
+        
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .button__purchase a:first-child {
+        margin-bottom: 2rem;
+
+        color: var(--white);
+        border: 1px solid var(--white);
+    }
+
+    .button__purchase a:last-child {
+        color: var(--white);
+        background: var(--orange-dark)
+    }
+
+
+
+.explanation {
+    background: #2C2C2C;
+    background: -webkit-radial-gradient(top right, #2C2C2C, #1A1A1A);
+    background: -moz-radial-gradient(top right, #2C2C2C, #1A1A1A);
+    background: radial-gradient(to bottom left, #2C2C2C, #1A1A1A);
+
+    padding: 2rem;
+}
+
+    .explanation__text h2 {
+        max-width: 50%;
+        margin: 1.5rem 0;        
+
+        color: var(--white);
+        font-size: 3.3rem; 
+        letter-spacing: 1.01px;
+    }
+
+    .explanation__text p {
+        text-align: left;
+        line-height: 2rem;
+        color: var(--gray-light);
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    .explanation__text p:nth-child(2) {
+        font-weight: 600;
+    }
+
+.explanation__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2.5rem;
+}
+
+    .explanation__content .card {
+        width: auto;
+
+        margin-bottom: 2.2rem;
+        padding: 1.5rem 2rem;
+
+        border: 1px solid #6E6E6E;
+        border-radius: 5px;
+        
+        text-align: left;
+    }
+
+    .explanation__content .card img {
+        display: block;
+
+        margin: 1.1rem auto;
+    }
+
+    .explanation__content h3 {
+        text-transform: uppercase;
+        color: var(--orange-dark);
+        font-weight: bold;
+        font-size: 0.9;
+    }
+
+    .explanation__content p {
+        color: var(--gray-light);
+        font-weight: bold;
+        line-height: 2rem;
+    }
