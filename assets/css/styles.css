@@ -28,6 +28,16 @@
     Utilizar SASS como pré-processador de CSS.
 */
 
+
+.container {
+    background: #2C2C2C;
+    background: -webkit-radial-gradient(top right, #2C2C2C, #1A1A1A);
+    background: -moz-radial-gradient(top right, #2C2C2C, #1A1A1A);
+    background: radial-gradient(to bottom left, #2C2C2C, #1A1A1A);
+
+    padding: 0 2rem;
+}
+
 .square {
     position: absolute;
     left: 1.2rem;
@@ -52,7 +62,7 @@
     margin: 0 auto;  
 
     height: 100%;
-    width: 77%;
+    width: 87%;
     
     display:flex;
     flex-direction: column;
@@ -87,6 +97,8 @@
 .button__purchase {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
     .button__purchase a {
@@ -109,38 +121,30 @@
         color: var(--white);
         background: var(--orange-dark)
     }
-
-
-
 .explanation {
-    background: #2C2C2C;
-    background: -webkit-radial-gradient(top right, #2C2C2C, #1A1A1A);
-    background: -moz-radial-gradient(top right, #2C2C2C, #1A1A1A);
-    background: radial-gradient(to bottom left, #2C2C2C, #1A1A1A);
-
-    padding: 2rem;
+    padding-top: 4rem;
 }
 
-    .explanation__text h2 {
+.explanation__text h2 {
         max-width: 50%;
-        margin: 1.5rem 0;        
+        margin-bottom: 1.5rem;        
 
         color: var(--white);
         font-size: 3.3rem; 
         letter-spacing: 1.01px;
     }
 
-    .explanation__text p {
-        text-align: left;
-        line-height: 2rem;
-        color: var(--gray-light);
-        font-size: 1rem;
-        font-weight: 300;
-    }
-    
-    .explanation__text p:nth-child(2) {
-        font-weight: 600;
-    }
+.explanation__text p {
+    text-align: left;
+    line-height: 2rem;
+    color: var(--gray-light);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.explanation__text p:nth-child(2) {
+    font-weight: 600;
+}
 
 .explanation__content {
     display: flex;
@@ -180,3 +184,121 @@
         font-weight: bold;
         line-height: 2rem;
     }
+
+    
+.inspiration__container__black {
+    background: black;    
+}
+
+    .inspiration__background {
+        background: url("../imgs/background-inspiration-mobile.svg"), no-repeat center;
+        opacity: 0.3;
+    }
+
+.inspiration > div > p {
+    padding: 3.5rem 1.5rem;
+        
+        color: var(--white);
+
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 3rem;
+        letter-spacing: 0.85px;
+
+        opacity: 1;
+    }
+
+.value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background:var(--orange-dark);
+}
+
+    .value p {
+        color: var(--white);
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 3rem;
+        letter-spacing: 0.85px;
+        
+        padding: 3.5rem 0 2rem  0;
+    }
+
+    .value a {
+        padding: 1.3rem 3rem;
+
+        margin-bottom: 3rem;
+
+        border-radius: 5px;
+        
+        background: var(--white);
+        color: var(--orange-dark);
+
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+.learn {
+    background: url("../imgs/teacher-bnw-mobile.png") no-repeat center center; 
+    background-size: cover;
+}
+
+
+    .learn__title {      
+        
+        padding: 2.5rem 0;
+
+        color: var(--white);
+        font-size: 3rem; 
+        letter-spacing: 1.01px;
+    }
+
+
+    .learn__description__title { 
+        color: var(--white);
+
+        padding: 0.6rem 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--gray-dark);
+    }
+
+    .learn__description__title h3 {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .learn__description__title img {
+        width: 1.5rem;
+        margin: 0 0.5rem;
+    }
+
+
+    .description {
+        border-top: 1px solid var(--orange-dark);
+        border-bottom: 1px solid var(--orange-dark);
+        padding: 1rem;
+        background-color: #262626;
+        font-weight: 300;
+        line-height: 1.8;
+        font-size: 1.3rem;
+        color: var(--white);
+        display: none;
+    }
+
+    .learn div:nth-child(6){
+        margin-top: 3rem;
+    }
+
+
+.teacher h2 {
+    padding: 2.5rem 0;
+
+    color: var(--white);
+    font-size: 3rem; 
+    letter-spacing: 1.01px;
+}
