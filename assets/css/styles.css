@@ -24,11 +24,9 @@
     Mobile Multiplicar por 12/16
 
     Ao clicar no botão "Tenho Interesse", deverá abrir o modal com formulário;
-
-    Utilizar SASS como pré-processador de CSS.
 */
 
-
+/* CONTAINER DEGRADE */
 .container {
     background: #2C2C2C;
     background: -webkit-radial-gradient(top right, #2C2C2C, #1A1A1A);
@@ -38,22 +36,29 @@
     padding: 0 2rem;
 }
 
+/* TITLE SQUARE */
 .square {
-    position: absolute;
-    left: 1.2rem;
     width:110px;
     height:110px;
+
+    position: absolute;
+    left: 1.2rem;
+
     border-right: 1px solid #FEC024;
     border-bottom: 1px solid #FEC024;
     border-left: 1px solid #FEC024;
 }
 
+/* MODAL CLICKING "TENHO INTERESSE" */
 .modal__background {
-    display: none;
-    position: fixed;
     width:100vw;
     height:100vh;
+
+    position: fixed;
+    display: none;
     background-color: rgba(0,0,0,0.6);
+
+    z-index: 10;
 }
 
 .visible {
@@ -61,13 +66,16 @@
 }
 
 .modal {
-    background: #232323;
-    border-radius: 5px;
     width: 90%;
-    height: 70%;
+    max-width: 350px;
+
     position: fixed;
     left: 50%;
     top: 50%;
+
+    background: #232323;
+
+    border-radius: 5px;
     transform: translate(-50%, -50%);
 }
 
@@ -80,73 +88,85 @@
         align-items: center;
         flex-direction: column;
     }
+    
+    .modal .close {
+        width: 20px;
+
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
 
     .modal form h1 {
-        font-size: 2.375rem;
         color: var(--orange-dark);
+
+        font-size: 2.375rem;
         font-weight: 600;
     }
 
     .modal form p {
         margin: 1rem 0;
 
+        color: #E1E1E1;
+
         font-size: 1rem;
         font-weight: 300;
-        color: #E1E1E1;
         line-height: 1.4;
         text-align: center;
     }
 
     .modal form input{
         width: 100%;
+        
         padding: 1rem;
         margin: 0.5rem 0;
+
         border-radius: 5px;
+
         font-size: 1rem;
         color: var(--gray-dark);
-        border: 1px solid var(--orange-dark)
+        border: 1px solid var(--orange-dark);
     }
  
     .modal form label{
+        display: inline-block;
+
         color: var(--gray-light);
-        display: inline-block
+    }
+    
+    .modal form input::placeholder {
+        color: var(--orange-dark);
     }
 
     .modal form div {
         width: 100%;
-        padding:0 0.1rem;
-    }
 
-    .modal form span {
-       text-decoration: underline;
+        padding:0 0.1rem;
     }
 
     input#termos {
         width: auto;
     }
 
+    .modal form span {
+       text-decoration: underline;
+    }
+
    .modal form button {
-       color: var(--white);
-       border-radius: 5px;
-       background-color: var(--orange-dark);
        padding: 0.8rem 2rem;
-       margin: 2rem 0;
+       margin-top: 2rem ;
+
+       border-radius: 5px;
+
+       color: var(--white);
+       background-color: var(--orange-dark);
    }
 
-    .modal form input::placeholder {
-        color: var(--orange-dark);
-    }
 
-    .modal .close {
-        width: 20px;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-    }
-
+/* =================== HOME PAGE ===================1 */
 .home {
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
 
     background: #2C2C2C;
     background: -webkit-radial-gradient(top right, #2C2C2C, #1A1A1A);
@@ -155,10 +175,10 @@
 }
 
 .home__content {
-    margin: 0 auto;  
-
     height: 100%;
     width: 87%;
+
+    margin: 0 auto;  
     
     display:flex;
     flex-direction: column;
@@ -177,6 +197,7 @@
 
     .home__content h1 {
             color: var(--white);
+
             font-size: 2.6rem;
             letter-spacing:0.85px;
             text-transform:capitalize;
@@ -185,6 +206,7 @@
 
     .home__content h2 {
         color: var(--gray-light);
+
         font-size:  0.9rem;
         font-weight: 300;
         line-height: 2.3;
@@ -217,6 +239,8 @@
         color: var(--white);
         background: var(--orange-dark)
     }
+
+/* =================== EXPLANATION ===================1 */
 .explanation {
     padding-top: 4rem;
 }
@@ -226,16 +250,18 @@
         margin-bottom: 1.5rem;        
 
         color: var(--white);
+
         font-size: 3.3rem; 
         letter-spacing: 1.01px;
     }
 
 .explanation__text p {
-    text-align: left;
-    line-height: 2rem;
     color: var(--gray-light);
+
     font-size: 1rem;
     font-weight: 300;
+    text-align: left;
+    line-height: 2rem;
 }
 
 .explanation__text p:nth-child(2) {
@@ -243,11 +269,11 @@
 }
 
 .explanation__content {
+    padding: 2.5rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    padding: 2.5rem;
 }
 
     .explanation__content .card {
@@ -269,19 +295,21 @@
     }
 
     .explanation__content h3 {
-        text-transform: uppercase;
         color: var(--orange-dark);
-        font-weight: bold;
+
         font-size: 0.9;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     .explanation__content p {
         color: var(--gray-light);
+
         font-weight: bold;
         line-height: 2rem;
     }
 
-    
+/* =================== HOME PAGE ===================1 */
 .inspiration__container__black {
     background: black;    
 }
@@ -294,15 +322,17 @@
 .inspiration > div > p {
     padding: 3.5rem 1.5rem;
         
-        color: var(--white);
+    color: var(--white);
 
-        text-align: center;
-        text-transform: capitalize;
-        font-size: 3rem;
-        letter-spacing: 0.85px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    letter-spacing: 0.85px;
 
-        opacity: 1;
+    opacity: 1;
     }
+
+/* =================== VALUE COURSE ===================1 */
 
 .value {
     display: flex;
@@ -313,18 +343,19 @@
 }
 
     .value p {
+        padding: 3.5rem 0 2rem  0;
+
         color: var(--white);
+
+        font-size: 3rem;
         text-align: center;
         text-transform: capitalize;
-        font-size: 3rem;
         letter-spacing: 0.85px;
         
-        padding: 3.5rem 0 2rem  0;
     }
 
     .value a {
         padding: 1.3rem 3rem;
-
         margin-bottom: 3rem;
 
         border-radius: 5px;
@@ -336,7 +367,10 @@
         text-transform: uppercase;
     }
 
+/* =================== LEARN ===================1 */
 .learn {
+    padding-bottom: 4rem;
+
     background: url("../imgs/teacher-bnw-mobile.png") no-repeat center center; 
     background-size: cover;
 }
@@ -352,13 +386,13 @@
 
 
     .learn__description__title { 
-        color: var(--white);
-
         padding: 0.6rem 1rem;
-
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        color: var(--white);
         background: var(--gray-dark);
     }
 
@@ -374,26 +408,37 @@
 
 
     .description {
+        padding: 1rem;
+
+        display: none;
+
         border-top: 1px solid var(--orange-dark);
         border-bottom: 1px solid var(--orange-dark);
-        padding: 1rem;
+
+        color: var(--white);
         background-color: #262626;
+
         font-weight: 300;
         line-height: 1.8;
         font-size: 1.3rem;
-        color: var(--white);
-        display: none;
     }
 
     .learn div:nth-child(6){
         margin-top: 3rem;
     }
 
+/* =================== TEACHERS ===================1 */
+.teacher {
+    padding-bottom: 8rem;
+    background: #0C0C0C;
+}
+
 .teacher__card {
+    margin-bottom: 2rem;
+    padding: 1.8rem;
+
     border: 1px solid var(--gray-dark);
     border-radius: 5px;
-    padding: 1.8rem;
-    margin-bottom: 2rem;
 }
 
     .teacher h2 {
@@ -415,10 +460,10 @@
     .teacher__card h3 {    
         color: var(--orange-dark);
 
+        font-size: 1rem;
+        font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-weight: 600;
-        font-size: 1rem;
     }
 
     .teacher__card p {
@@ -434,3 +479,98 @@
     .teacher div:last-child{
         margin-top: 3rem;
     }
+
+/* =================== DEPOSITIONS =================== */
+.depositions {
+    background: url("../imgs/opinion-mobile.png")  no-repeat bottom center scroll;
+    width: 100vw;
+    height: 85vh;
+    background-size: cover;
+}
+
+.depositions h2 {
+    padding: 5.5rem 0 4rem 0;
+
+    color: var(--white);
+    font-size: 2.9rem;
+    letter-spacing: 0.85px;
+    text-align: center;
+}
+
+.depositions p {
+    color: var(--orange-dark);
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2.57px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* =================== CAPACITY =================== */
+.capacity {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.capacity h2 {
+    margin-bottom: 2rem;
+
+    color: var(--white);
+
+    font-size: 3rem;
+    letter-spacing: 1.01px;    
+}
+
+.capacity p {
+    color: var(--gray-light);
+    line-height: 1.7;
+}
+
+.capacity p:nth-child(3) {
+    margin-bottom: 3rem;
+}
+
+.capacity  span {
+    color: var(--gray-light);
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+
+ul .circle {
+    margin-right: 1rem;
+
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--orange-dark);
+    border-radius: 50%;
+}
+
+ul div {
+    display: flex;
+    align-items: center;
+}
+
+li h3 {
+
+    color: var(--orange-dark);
+
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    list-style: circle;
+
+    list-style: disc;
+}
+
+li p {
+    margin: 0.5rem 0 2rem 0;
+
+    margin-left: 2rem;
+    font-weight: 600;
+}
+
+li:last-child p {
+    margin-bottom: 5rem;
+}

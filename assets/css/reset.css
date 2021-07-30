@@ -1,5 +1,7 @@
+/* IMPORT FONT GOOGLE */
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;700&display=swap');
 
+/* RESET TAGS */
 * {
     padding:0;
     margin:0;
@@ -13,12 +15,12 @@
 }
 
 
+/* ADDING RESPONSIBILITY TO TEXTS ALONG WITH PARENT ELEMENTS */
 @media(max-width: 1080px) {
     html {
         font-size: 93.75%;
     }
 }
-/* ADICIONANDO RESPONSIVIDADE AOS TEXTOS JUNTO AOS ELEMENTOS PAIS*/
 @media(max-width: 720px) {
     html {
         font-size: 87.5%;

@@ -24,17 +24,22 @@ function click() {
 }
 
 
-// Pegando todos os botões "TENHO INTERESSE" e aplicando o onClick modal open
 var buttonModal = document.getElementsByClassName("button__modal")
 
+// Taking all the "TENHO INTERESSE" buttons and applying the onClick Modal Open
 for (var i = 0; i < buttonModal.length ; ++i){
     buttonModal[i].onclick = function() {openModal()};
 }
 
+// Modal open visible
 function openModal() {
     document.querySelector(".modal__background").classList.add("visible")
 }
 
+// Modal close invisible
 function closeModal() {
     document.querySelector(".modal__background").classList.remove("visible")
 }
+
+
+// CAROUSEL =============
