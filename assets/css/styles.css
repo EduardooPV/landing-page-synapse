@@ -48,6 +48,102 @@
     border-left: 1px solid #FEC024;
 }
 
+.modal__background {
+    display: none;
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.visible {
+    display: block;
+}
+
+.modal {
+    background: #232323;
+    border-radius: 5px;
+    width: 90%;
+    height: 70%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .modal form{
+        height:100%;
+        padding: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .modal form h1 {
+        font-size: 2.375rem;
+        color: var(--orange-dark);
+        font-weight: 600;
+    }
+
+    .modal form p {
+        margin: 1rem 0;
+
+        font-size: 1rem;
+        font-weight: 300;
+        color: #E1E1E1;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .modal form input{
+        width: 100%;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: var(--gray-dark);
+        border: 1px solid var(--orange-dark)
+    }
+ 
+    .modal form label{
+        color: var(--gray-light);
+        display: inline-block
+    }
+
+    .modal form div {
+        width: 100%;
+        padding:0 0.1rem;
+    }
+
+    .modal form span {
+       text-decoration: underline;
+    }
+
+    input#termos {
+        width: auto;
+    }
+
+   .modal form button {
+       color: var(--white);
+       border-radius: 5px;
+       background-color: var(--orange-dark);
+       padding: 0.8rem 2rem;
+       margin: 2rem 0;
+   }
+
+    .modal form input::placeholder {
+        color: var(--orange-dark);
+    }
+
+    .modal .close {
+        width: 20px;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
 .home {
     height: 100vh;
     width: 100vw;
@@ -247,7 +343,6 @@
 
 
     .learn__title {      
-        
         padding: 2.5rem 0;
 
         color: var(--white);
@@ -294,11 +389,48 @@
         margin-top: 3rem;
     }
 
-
-.teacher h2 {
-    padding: 2.5rem 0;
-
-    color: var(--white);
-    font-size: 3rem; 
-    letter-spacing: 1.01px;
+.teacher__card {
+    border: 1px solid var(--gray-dark);
+    border-radius: 5px;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
 }
+
+    .teacher h2 {
+        padding: 3rem 0;
+
+        color: var(--white);
+        font-size: 3.3rem; 
+        letter-spacing: 1.01px;
+    }
+
+    .teacher__card img {
+        width:100%;
+
+        margin-bottom: 2rem;
+
+        border-radius: 5px;
+    }
+
+    .teacher__card h3 {    
+        color: var(--orange-dark);
+
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .teacher__card p {
+        margin-top: 2rem;
+
+        color: var(--gray-light);
+
+        line-height: 1.5;
+        font-weight: 2px;
+        font-size: 1.1rem;
+    }
+
+    .teacher div:last-child{
+        margin-top: 3rem;
+    }

@@ -14,6 +14,28 @@
 
 </head>
 <body>
+
+
+    <div class="modal__background">
+        <div class="modal">
+            <form action="">
+                <img onclick="closeModal()"  class="close" src="./assets/imgs/cancel.png">
+                <h1>LOREM</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Telefone">
+                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="Profissão">
+                <div>
+                    <input type="checkbox" name="termos" id="termos">
+                    <label for="termos">Li e aceito os <span>termos de uso.</span></label>
+                </div>
+                <button type="submit">DECLARAR INTERESSE</button>
+            </form>
+        </div>
+    </div>
+
+
     <section class="home container">
 
         <div class="home__content">
@@ -23,7 +45,7 @@
              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h2>
 
             <div class="button__purchase">
-                <a href="#" role="button">Tenho interesse</a>
+                <a class="button__modal" href="#" role="button">Tenho interesse</a>
                 <a href="#" role="button">Comprar agora</a>
             </div>
             
@@ -72,7 +94,7 @@
                 </div>
 
                 <div class="button__purchase">
-                    <a href="#" role="button">Tenho interesse</a>
+                    <a class="button__modal" href="#" role="button">Tenho interesse</a>
                     <a href="#" role="button">Comprar agora</a>
                 </div>
             </div>
@@ -144,7 +166,7 @@
             </div>
         
             <div class="button__purchase">
-                <a href="#" role="button">Tenho interesse</a>
+                <a class="button__modal" href="#" role="button">Tenho interesse</a>
                 <a href="#" role="button">Comprar agora</a>
             </div>
 
@@ -153,6 +175,39 @@
         <div class="square "></div>
         <section class="teacher container">
             <h2>Nossos Professores</h2>
+
+            <div class="teacher__card">
+                <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
+
+                <h3>Fulano de tal,</h3>
+                <h3>Phd em comunicação</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+            </div>
+
+            <div class="teacher__card">
+                <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
+
+                <h3>Fulano de tal,</h3>
+                <h3>Phd em comunicação</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+            </div>
+
+            <div class="teacher__card">
+                <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
+
+                <h3>Fulano de tal,</h3>
+                <h3>Phd em comunicação</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+            </div>
+
+            <div class="button__purchase">
+                <a class="button__modal" href="#" role="button">Tenho interesse</a>
+                <a href="#" role="button">Comprar agora</a>
+            </div>            
+            
         </section>
 
     </main>

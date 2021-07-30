@@ -22,3 +22,19 @@ function click() {
     }
 
 }
+
+
+// Pegando todos os botões "TENHO INTERESSE" e aplicando o onClick modal open
+var buttonModal = document.getElementsByClassName("button__modal")
+
+for (var i = 0; i < buttonModal.length ; ++i){
+    buttonModal[i].onclick = function() {openModal()};
+}
+
+function openModal() {
+    document.querySelector(".modal__background").classList.add("visible")
+}
+
+function closeModal() {
+    document.querySelector(".modal__background").classList.remove("visible")
+}
