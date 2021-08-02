@@ -47,19 +47,6 @@ function mtel(v) {
     return r;
 }
 
-
-// Checkbox important
-function confirm() {
-    closeModal()
-
-    let modal = document.querySelector('.modal__return')
-    modal.style.display = "block"
-
-    setTimeout(function() {
-        modal.style.display = "none"
-    }, 10000)
-}
-
 function openDescription() {
 
     if (description.style.display === "none") {
