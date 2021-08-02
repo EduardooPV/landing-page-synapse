@@ -90,7 +90,7 @@
     }
     
     .modal .close {
-        width: 20px;
+        width: 40px;
 
         position: absolute;
         right: 1rem;
@@ -148,11 +148,12 @@
         width: auto;
     }
 
-    .modal form span {
+    .modal form a {
        text-decoration: underline;
+       color: white;
     }
 
-   .modal form button {
+   .modal form .submit {
        padding: 0.8rem 2rem;
        margin-top: 2rem ;
 
@@ -162,6 +163,36 @@
        background-color: var(--orange-dark);
    }
 
+
+/* =================== BUTTONS ====================*/
+.button__purchase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+    .button__purchase button {
+        padding: 1.2rem 1.6rem;
+
+        border-radius: 5px;
+        
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .button__purchase button:first-child {
+        margin-bottom: 2rem;
+
+        color: var(--white);
+        border: 1px solid var(--white);
+        background: transparent;
+    }
+
+    .button__purchase button:last-child {
+        color: var(--white);
+        background: var(--orange-dark)
+    }
 
 /* =================== HOME PAGE ===================1 */
 .home {
@@ -212,33 +243,6 @@
         line-height: 2.3;
     }
 
-.button__purchase {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-    .button__purchase a {
-        padding: 1.2rem 1.6rem;
-
-        border-radius: 5px;
-        
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .button__purchase a:first-child {
-        margin-bottom: 2rem;
-
-        color: var(--white);
-        border: 1px solid var(--white);
-    }
-
-    .button__purchase a:last-child {
-        color: var(--white);
-        background: var(--orange-dark)
-    }
 
 /* =================== EXPLANATION ===================1 */
 .explanation {
@@ -309,17 +313,23 @@
         line-height: 2rem;
     }
 
-/* =================== HOME PAGE ===================1 */
+/* =================== INSPIRATION ===================1 */
 .inspiration__container__black {
-    background: black;    
+    background: black;   
 }
 
-    .inspiration__background {
-        background: url("../imgs/background-inspiration-mobile.svg"), no-repeat center;
-        opacity: 0.3;
-    }
+.inspiration__background {
+    background: url("../imgs/background-inspiration-mobile.svg"), no-repeat ;
 
-.inspiration > div > p {
+    opacity: 0.3;
+
+    position: absolute;
+    
+    height: 50%;
+    width: 100%;
+}
+
+.inspiration p {
     padding: 3.5rem 1.5rem;
         
     color: var(--white);
@@ -328,8 +338,6 @@
     text-transform: capitalize;
     font-size: 3rem;
     letter-spacing: 0.85px;
-
-    opacity: 1;
     }
 
 /* =================== VALUE COURSE ===================1 */
@@ -354,7 +362,7 @@
         
     }
 
-    .value a {
+    .value button {
         padding: 1.3rem 3rem;
         margin-bottom: 3rem;
 
@@ -607,7 +615,8 @@ ul div {
 
 footer {
     background: #0C0C0C;
-    padding: 3rem 0;
+    padding: 3rem 0 1rem 0;
+    font-weight: 600;
 }
 
 footer p {
@@ -617,5 +626,5 @@ footer p {
 }
 
 footer p:last-child {
-    margin: 3rem 0;
+    margin: 4rem 0;
 }
