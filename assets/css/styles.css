@@ -65,6 +65,28 @@
     display: block;
 }
 
+.modal__return {
+    width: 60%;
+    max-width: 225px;
+    height: 20px;
+
+    display: none;
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 5px;
+
+    background-color: green;
+    color: white;
+
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+
+}
+
 .modal {
     width: 90%;
     max-width: 350px;
@@ -314,18 +336,14 @@
     }
 
 /* =================== INSPIRATION ===================1 */
-.inspiration__container__black {
-    background: black;   
-}
-
 .inspiration__background {
     background: url("../imgs/background-inspiration-mobile.svg"), no-repeat ;
+    background-color: black;
 
-    opacity: 0.3;
-
+    z-index: -1;
     position: absolute;
     
-    height: 50%;
+    height: 100%;
     width: 100%;
 }
 
@@ -417,7 +435,7 @@
 
     .description {
         padding: 1rem;
-
+        
         display: none;
 
         border-top: 1px solid var(--orange-dark);

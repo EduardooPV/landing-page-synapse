@@ -15,30 +15,57 @@
 </head>
 <body>
 
+    <div class="modal__return">
+        Informações enviadas com sucesso!
+    </div>
+
     <!-- MODAL BUTTON "TENHO INTERESSE" -->
     <div class="modal__background">
         <div class="modal">
 
             <!-- FORM BY CLICKING ON "TENHO INTERESSE"-->
-            <form action="">
+            <form action="" id="formulario" name="formulario">
                 <img onclick="closeModal()"  class="close" src="./assets/imgs/cancel.svg">
+
                 <h1>LOREM</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
 
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="Telefone">
-                <input type="text" placeholder="E-mail">
-                <input type="text" placeholder="Profissão">
+                <input name="nome" 
+                type="text" required         
+                maxlength="60"
+                placeholder="Nome">
+
+                <input name="telefone"
+                onkeypress="masktel(this, mtel);" onblur="masktel(this, mtel);"
+                type="tel" 
+                required      
+                placeholder="Telefone">
+
+                <input name="email" 
+                type="email" 
+                required         
+                minlength="10"
+                maxlength="60"
+                placeholder="E-mail">
+
+                <input name="profissao" 
+                type="text"
+                required     
+                maxlength="50"
+                placeholder="Profissão">
+
                 <div>
-                    <input type="checkbox" name="termos" id="termos">
+                    <input type="checkbox" required name="termos" id="termos">
                     <label for="termos">Li e aceito os <a href="#">termos de uso.</a></label>
                 </div>
 
-                <button class="submit">DECLARAR INTERESSE</button>
+                <button onClick="confirm()" class="submit">DECLARAR INTERESSE</button>
             </form>
 
         </div>
     </div>
+
+
 
     <!-- HOME PAGE -->
     <section class="home container">
@@ -114,9 +141,11 @@
         </section>
 
         <!-- "INSPIRATION" - TEXT INSPIRATION -->
-        <section class="inspiration  inspiration__container__black">
+            <div class="inspiration__background"></div>
+            <section class="inspiration  inspiration__container__black ">
 
             <div class="inspiration__background"></div>
+            
             <p>Chegou a sua hora de brilhar lorem ipsum dolor sit amet</p>
             
         </section>
@@ -139,7 +168,7 @@
             </div>
 
             <div class="learn__description">
-                <div class="learn__description__title">
+                <div onClick="openDescription()" class="learn__description__title">
                     <h3>Competências 1</h3>
                     <img class="img" src="./assets/imgs/arrowup.png" alt="">
                 </div>
@@ -149,7 +178,7 @@
                 </div>
             </div>
             
-            <div class="learn__description">
+            <div onClick="openDescription()"  class="learn__description">
                 <div class="learn__description__title">
                     <h3>Competências 2</h3>
                     <img class="img" src="./assets/imgs/arrowup.png" alt="">
@@ -161,7 +190,7 @@
             </div>
             
             <div class="learn__description">
-                <div class="learn__description__title">
+                <div onClick="openDescription()"  class="learn__description__title">
                     <h3>Competências 3</h3>
                     <img class="img" src="./assets/imgs/arrowup.png" alt="">
                 </div>
@@ -171,7 +200,7 @@
                 </div>
             </div>
             
-            <div class="learn__description">
+            <div onClick="openDescription()"  class="learn__description">
                 <div class="learn__description__title">
                     <h3>Competências 4</h3>
                     <img class="img" src="./assets/imgs/arrowup.png" alt="">
