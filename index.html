@@ -60,14 +60,17 @@
         </div>
     </div>
 
-
-
     <!-- HOME PAGE -->
     <section class="home container">
 
         <div class="home__content">
 
-            <img src="./assets/imgs/logo-synapse-mobile.png" alt="Simbolo Synapse">
+            <picture>
+                <source srcset="./assets/imgs/logo-synapse-desktop.png" media="(min-width: 768px)"/>
+
+                <img src="./assets/imgs/logo-synapse-mobile.png" alt="Logo synapse"/>
+              </picture>
+
             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
 
             <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h2>
@@ -94,6 +97,11 @@
                 <h2>Sem clientes?</h2>
                 <p>Esta seção visa explicar resumidamente o curso. </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor</p>
+
+                <div class="button__purchase">
+                    <button class="button__modal">Tenho interesse</button>
+                    <button>Quero comprar</button>
+                </div>
             </div>
 
             <!-- CARD CONTAINER  -->
@@ -135,80 +143,90 @@
             </div>
         </section>
 
-        <!-- "INSPIRATION" - TEXT INSPIRATION -->
+        <!-- "INSPIRATION" and ""VALUE"- TEXT INSPIRATION -->
+        <div class="container__desktop">
             <div class="inspiration__background"></div>
+            
             <section class="inspiration  inspiration__container__black ">
-
-            <div class="inspiration__background"></div>
             
-            <p>Chegou a sua hora de brilhar lorem ipsum dolor sit amet</p>
+                <p>Chegou a sua hora de brilhar lorem ipsum dolor sit amet</p>
             
-        </section>
+            </section>
 
-        <!-- "VALUE" - Course fee -->
-        <section class="value container">
-
-            <p>R$ 5.000,00</p>
-
-            <button>FAZER O CURSO</button>
-
-        </section>
+            <!-- "VALUE" - Course fee -->
+            <section class="value container">
+                <p>R$ 5.000,00</p>
+                <button>FAZER O CURSO</button>
+            </section>
+        </div>
 
         <!-- "LEARN" - WHAT WILL YOU LEARN ON THE COURSE -->
         <div class="square "></div>
         <section class="learn container">
 
-            <div class="learn__title">
-                <h2>O que você aprendera?</h2>
-            </div>
-
-            <div class="learn__description">
-                <div onClick="openDescription()" class="learn__description__title">
-                    <h3>Competências 1</h3>
-                    <img class="img" src="./assets/imgs/arrowup.png" alt="">
+            <div class="learn__content">
+                <div class="learn__title">
+                    <h2>O que você aprendera?</h2>
                 </div>
+    
+                <!-- ======== ALERTA DE GAMBIARRA POR DESISTENCIA =========== -->
+                <div class="learn__description">
 
-                <div id="description" class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
+                    <div onClick="openDescription1()" class="learn__description__title">
+                        <h3>Competências 1</h3>
+                        <img class="img" src="./assets/imgs/arrowup.png" alt="">
+                    </div>
+    
+                    <div id="description" class="description1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
+                    </div>
                 </div>
-            </div>
+                
+                <div class="learn__description">
+                    <div  onClick="openDescription2()"  class="learn__description__title">
+                        <h3>Competências 2</h3>
+                        <img class="img" src="./assets/imgs/arrowup.png" alt="">
+                    </div>
+    
+                    <div id="description" class="description2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
+                    </div>
+                </div>
+                
+                <div class="learn__description">
+                    <div  onClick="openDescription3()"  class="learn__description__title">
+                        <h3>Competências 3</h3>
+                        <img class="img" src="./assets/imgs/arrowup.png" alt="">
+                    </div>
+    
+                    <div id="description" class="description3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
+                    </div>
+                </div>
+                
+                <div class="learn__description">
+                    <div  onClick="openDescription4()"  class="learn__description__title">
+                        <h3>Competências 4</h3>
+                        <img class="img" src="./assets/imgs/arrowup.png" alt="">
+                    </div>
+    
+                    <div id="description" class="description4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
+                    </div>
+                </div>
             
-            <div onClick="openDescription()"  class="learn__description">
-                <div class="learn__description__title">
-                    <h3>Competências 2</h3>
-                    <img class="img" src="./assets/imgs/arrowup.png" alt="">
+                <div class="button__purchase">
+                    <button class="button__modal">Tenho interesse</button>
+                    <button>Quero comprar</button>
                 </div>
 
-                <div id="description" class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
-                </div>
             </div>
-            
-            <div class="learn__description">
-                <div onClick="openDescription()"  class="learn__description__title">
-                    <h3>Competências 3</h3>
-                    <img class="img" src="./assets/imgs/arrowup.png" alt="">
-                </div>
 
-                <div id="description" class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
-                </div>
-            </div>
-            
-            <div onClick="openDescription()"  class="learn__description">
-                <div class="learn__description__title">
-                    <h3>Competências 4</h3>
-                    <img class="img" src="./assets/imgs/arrowup.png" alt="">
-                </div>
+            <div class="learn__description__desktop">
+                <p> <span>Esta seção visa explicar as competências que os alunos possuirão uma vez que concluírem o curso.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris.</p>
 
-                <div id="description" class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
-                </div>
-            </div>
-        
-            <div class="button__purchase">
-                <button class="button__modal">Tenho interesse</button>
-                <button>Quero comprar</button>
+                <button class="button__modal">TENHO INTERESSE</button>
+                <button>COMPRE AGORA</button>
             </div>
 
         </section>
@@ -217,33 +235,86 @@
         <div class="square "></div>
         <section class="teacher container">
 
-            <h2>Nossos Professores</h2>
+            <h2>Nossos <br> Professores</h2> 
 
-            <div class="teacher__card">
-                <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
+            <div class="teacher__card__container">
+                <div class="teacher__card">
+                    <picture>
+                        <source srcset="./assets/imgs/teacher-desktop.png" media="(min-width: 768px)"/>
+        
+                        <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
+                    </picture>
+    
+                    <h3>Fulano de tal,</h3>
+                    <h3>Phd em comunicação</h3>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                </div>
+    
+                <div class="teacher__card">
+                    <picture>
+                        <source srcset="./assets/imgs/teacher-desktop.png" media="(min-width: 768px)"/>
+        
+                        <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
+                    </picture>
+    
+                    <h3>Fulano de tal,</h3>
+                    <h3>Phd em comunicação</h3>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                </div>
+    
+                <div class="teacher__card">
+                    <picture>
+                        <source srcset="./assets/imgs/teacher-desktop.png" media="(min-width: 768px)"/>
+        
+                        <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
+                    </picture>
+    
+                    <h3>Fulano de tal,</h3>
+                    <h3>Phd em comunicação</h3>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                </div>
 
-                <h3>Fulano de tal,</h3>
-                <h3>Phd em comunicação</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
-            </div>
-
-            <div class="teacher__card">
-                <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
-
-                <h3>Fulano de tal,</h3>
-                <h3>Phd em comunicação</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
-            </div>
-
-            <div class="teacher__card">
-                <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
-
-                <h3>Fulano de tal,</h3>
-                <h3>Phd em comunicação</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                <div class="teacher__card invisible">
+                    <picture>
+                        <source srcset="./assets/imgs/teacher-desktop.png" media="(min-width: 768px)"/>
+        
+                        <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
+                    </picture>
+    
+                    <h3>Fulano de tal,</h3>
+                    <h3>Phd em comunicação</h3>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                </div>
+    
+                <div class="teacher__card invisible">
+                    <picture>
+                        <source srcset="./assets/imgs/teacher-desktop.png" media="(min-width: 768px)"/>
+        
+                        <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
+                    </picture>
+    
+                    <h3>Fulano de tal,</h3>
+                    <h3>Phd em comunicação</h3>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                </div>
+    
+                <div class="teacher__card invisible">
+                    <picture>
+                        <source srcset="./assets/imgs/teacher-desktop.png" media="(min-width: 768px)"/>
+        
+                        <img src="./assets/imgs/teacher-mobile.png" alt="Teacher">
+                    </picture>
+    
+                    <h3>Fulano de tal,</h3>
+                    <h3>Phd em comunicação</h3>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                </div>
             </div>
 
             <div class="button__purchase">
@@ -254,18 +325,59 @@
         </section>
 
         <!-- CAROUSEL DEPOSITIONs-->
-        <section class="depositions container">
-            <h2>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom mesmo"</h2>
-            <p>fulano de tal,</br> médico muito conceituado</p>
+        <section class="depositions container">            
+            
+            <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+
+                    <h2>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom mesmo"</h2>
+                    <p>Fulano de tal,</br> médico muito conceituado</p>
+
+                </div>
+                
+                <div class="mySlides fade">
+
+                    <h2>"Adorei o curso, com ótimos professores e todos ótimos profissionais qualificados"</h2>
+                    <p>O tal do fulano,</br> psicologo muito conceituado</p>
+
+                </div>
+                
+                <div class="mySlides fade">
+
+                    <h2>"Adorei o curso"</h2>
+                    <p>Fulano de poucas palavras</p>
+                    
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        
         </section>
 
         <!-- "CAPACITY" - ABILITY TO LEARN -->
         <div class="square"></div>
         <section class="capacity container">
-            <h2>Capacidade de aprender</h2>
 
-            <span>Esta seção visa explicar as metodologias de ensino empregadas. </span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae.</p>
+            <div class="capacity__text">
+                <h2>Capacidade de aprender</h2>
+                <span>Esta seção visa explicar as metodologias de ensino empregadas. </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae.</p>
+
+                <div class="button__purchase">
+                    <button class="button__modal">Tenho interesse</button>
+                    <button>Quero comprar</button>
+                </div>  
+            </div>
 
             <ul type="circle">
                 <li>
@@ -308,16 +420,21 @@
         <!-- "FIT" - I'm fit? -->
         <div class="square"></div>
         <section class="fit container">
-            <h2>Eu estou <br> Apto?</h2>
+
+            <div class="fit__content">
+                <h2>Eu estou <br> Apto?</h2>
             
-            <span>Esta seção visa explicar quem é a persona que o curso quer atingir.</span>
+                <span>Esta seção visa explicar quem é a persona que o curso quer atingir.</span>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae.</p>
 
-            <div class="button__purchase">
-                <button class="button__modal">Tenho interesse</button>
-                <button>Quero comprar</button>
-            </div>  
+                <div class="button__purchase">
+                    <button class="button__modal">Tenho interesse</button>
+                    <button>Quero comprar</button>
+                </div>  
+                
+            </div>
+
         </section>
         
         <footer>

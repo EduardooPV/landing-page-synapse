@@ -7,25 +7,6 @@
     --black: #191919;
 }
 
-/*
-    H1: # FFF 54px
-    H2: # FFF 46px
-    H3: # FFF 32px
-    H4: # FFF 24px
-
-    SUB: # F89D24 32px
-    SUB: # F89D24 24px
-    SUB: # F89D24 14px
-
-    BODY: # B5B5B5 18px
-    BODY: # B5B5B5 16px
-
-    Tablet Multiplicar por 14/16 
-    Mobile Multiplicar por 12/16
-
-    Ao clicar no botão "Tenho Interesse", deverá abrir o modal com formulário;
-*/
-
 /* CONTAINER DEGRADE */
 .container {
     background: #2C2C2C;
@@ -65,7 +46,6 @@
     display: block;
 }
 
-
 .modal {
     width: 90%;
     max-width: 350px;
@@ -96,11 +76,12 @@
         position: absolute;
         right: 1rem;
         top: 1rem;
+
+        cursor: pointer;
     }
 
     .modal form h1 {
         color: var(--orange-dark);
-
         font-size: 2.375rem;
         font-weight: 600;
     }
@@ -131,7 +112,6 @@
  
     .modal form label{
         display: inline-block;
-
         color: var(--gray-light);
     }
     
@@ -141,7 +121,6 @@
 
     .modal form div {
         width: 100%;
-
         padding:0 0.1rem;
     }
 
@@ -162,15 +141,15 @@
 
        color: var(--white);
        background-color: var(--orange-dark);
-   }
 
+       cursor: pointer;
+   }
 
 /* =================== BUTTONS ====================*/
 .button__purchase {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
     .button__purchase button {
@@ -180,6 +159,8 @@
         
         font-weight: bold;
         text-transform: uppercase;
+
+        cursor: pointer;
     }
 
     .button__purchase button:first-child {
@@ -197,7 +178,6 @@
 
 /* =================== HOME PAGE ===================1 */
 .home {
-    width: 100vw;
     height: 100vh;
 
     background: #2C2C2C;
@@ -226,7 +206,6 @@
         top: 1rem;
     }
 
-
     .home__content h1 {
             color: var(--white);
 
@@ -237,6 +216,8 @@
         }
 
     .home__content h2 {
+        max-width: 450px;
+
         color: var(--gray-light);
 
         font-size:  0.9rem;
@@ -250,7 +231,7 @@
     padding-top: 4rem;
 }
 
-.explanation__text h2 {
+    .explanation__text h2 {
         max-width: 50%;
         margin-bottom: 1.5rem;        
 
@@ -260,18 +241,18 @@
         letter-spacing: 1.01px;
     }
 
-.explanation__text p {
-    color: var(--gray-light);
+    .explanation__text p {
+        color: var(--gray-light);
 
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: left;
-    line-height: 2rem;
-}
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: left;
+        line-height: 2rem;
+    }
 
-.explanation__text p:nth-child(2) {
-    font-weight: 600;
-}
+    .explanation__text p:nth-child(2) {
+        font-weight: 600;
+    }
 
 .explanation__content {
     padding: 2.5rem;
@@ -282,7 +263,7 @@
 }
 
     .explanation__content .card {
-        width: auto;
+        max-width: 340px;
 
         margin-bottom: 2.2rem;
         padding: 1.5rem 2rem;
@@ -295,13 +276,11 @@
 
     .explanation__content .card img {
         display: block;
-
         margin: 1.1rem auto;
     }
 
     .explanation__content h3 {
         color: var(--orange-dark);
-
         font-size: 0.9;
         font-weight: bold;
         text-transform: uppercase;
@@ -309,9 +288,12 @@
 
     .explanation__content p {
         color: var(--gray-light);
-
         font-weight: bold;
         line-height: 2rem;
+    }
+    
+    .explanation__text > .button__purchase {
+        display: none;
     }
 
 /* =================== INSPIRATION ===================1 */
@@ -338,7 +320,6 @@
     }
 
 /* =================== VALUE COURSE ===================1 */
-
 .value {
     display: flex;
     flex-direction: column;
@@ -356,7 +337,6 @@
         text-align: center;
         text-transform: capitalize;
         letter-spacing: 0.85px;
-        
     }
 
     .value button {
@@ -380,7 +360,6 @@
     background-size: cover;
 }
 
-
     .learn__title {      
         padding: 2.5rem 0;
 
@@ -388,7 +367,6 @@
         font-size: 3rem; 
         letter-spacing: 1.01px;
     }
-
 
     .learn__description__title { 
         padding: 0.6rem 1rem;
@@ -411,8 +389,57 @@
         margin: 0 0.5rem;
     }
 
+    /* ======== ALERTA DE GAMBIARRA POR DESISTENCIA =========== */
 
-    .description {
+    .description1 {
+        padding: 1rem;
+        
+        display: none;
+
+        border-top: 1px solid var(--orange-dark);
+        border-bottom: 1px solid var(--orange-dark);
+
+        color: var(--white);
+        background-color: #262626;
+
+        font-weight: 300;
+        line-height: 1.8;
+        font-size: 1.3rem;
+    }
+
+    .description2 {
+        padding: 1rem;
+        
+        display: none;
+
+        border-top: 1px solid var(--orange-dark);
+        border-bottom: 1px solid var(--orange-dark);
+
+        color: var(--white);
+        background-color: #262626;
+
+        font-weight: 300;
+        line-height: 1.8;
+        font-size: 1.3rem;
+    }
+
+    .description3 {
+        padding: 1rem;
+        
+        display: none;
+
+        border-top: 1px solid var(--orange-dark);
+        border-bottom: 1px solid var(--orange-dark);
+
+        color: var(--white);
+        background-color: #262626;
+
+        font-weight: 300;
+        line-height: 1.8;
+        font-size: 1.3rem;
+    }
+
+    .description4 {
         padding: 1rem;
         
         display: none;
@@ -432,10 +459,18 @@
         margin-top: 3rem;
     }
 
+    .learn__description__desktop {
+        display: none;
+    }
+
 /* =================== TEACHERS ===================1 */
 .teacher {
     padding-bottom: 8rem;
     background: #0C0C0C;
+}
+
+.invisible {
+    display: none;
 }
 
 .teacher__card {
@@ -456,9 +491,7 @@
 
     .teacher__card img {
         width:100%;
-
         margin-bottom: 2rem;
-
         border-radius: 5px;
     }
 
@@ -487,14 +520,17 @@
 
 /* =================== DEPOSITIONS =================== */
 .depositions {
-    background: url("../imgs/opinion-mobile.png")  no-repeat bottom center scroll;
-    width: 100vw;
+    background: url("../imgs/opinion-mobile.png")  no-repeat center;
     height: 85vh;
     background-size: cover;
+    padding: 0;
 }
 
     .depositions h2 {
-        padding: 5.5rem 0 4rem 0;
+        max-width: 500px;
+
+        margin: 0 auto;
+        padding: 5.5rem 2rem 4rem 2rem;
 
         color: var(--white);
         font-size: 2.9rem;
@@ -510,6 +546,70 @@
         letter-spacing: 2.57px;
         text-transform: uppercase;
         text-align: center;
+    }
+
+/* =================== SLIDE =================== */
+.slideshow-container {
+    max-width: 1000px;
+    height: 80%;
+    position: relative;
+    margin: auto;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 0 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #5c5c5c;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
 }
 
 /* =================== CAPACITY =================== */
@@ -539,8 +639,11 @@
         color: var(--gray-light);
         font-weight: 600;
         line-height: 1.7;
-}
+    }
 
+.capacity__text > .button__purchase {
+    display: none;
+} 
 
 ul .circle {
     margin-right: 1rem;
@@ -554,10 +657,9 @@ ul .circle {
 ul div {
     display: flex;
     align-items: center;
-    }
+}
 
     li h3 {
-
         color: var(--orange-dark);
 
         font-size: 1rem;
@@ -570,9 +672,7 @@ ul div {
     }
 
     li p {
-        margin: 0.5rem 0 2rem 0;
-
-        margin-left: 2rem;
+        margin: 0.5rem 0 2rem 2rem;
         font-weight: 600;
     }
 
@@ -582,26 +682,25 @@ ul div {
 
 /* =================== FIT =================== */
 .fit {
-    background: url("../imgs/background-negociando-mobile.png")no-repeat bottom center scroll;
-    width: 100vw;
-    height: 85vh;
-    background-size: cover;
     padding: 4rem 2rem;
+
+    background: url("../imgs/background-negociando-mobile.png")no-repeat center;
+    background-size: cover;
 }
 
     .fit h2 {
         margin-bottom: 2rem;
 
-            color: var(--white);
+        color: var(--white);
 
-            font-size: 3rem;
-            letter-spacing: 1.01px;  
+        font-size: 3rem;
+        letter-spacing: 1.01px;  
     }
 
     .fit p {
+        margin-bottom: 5rem;
         color: var(--gray-light);
         line-height: 2;
-        margin-bottom: 5rem;
     }
 
     .fit  span {
@@ -611,8 +710,8 @@ ul div {
     }
 
 footer {
-    background: #0C0C0C;
     padding: 3rem 0 1rem 0;
+    background: #0C0C0C;
     font-weight: 600;
 }
 
@@ -624,4 +723,371 @@ footer p {
 
 footer p:last-child {
     margin: 4rem 0;
+}
+
+/* =============== RESPONSIVE =============== */
+@media screen and  (min-width: 768px) {
+    /* =================== MODAL =================== */
+    .modal {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .modal form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* =============== HOME =============== */
+    .home__content {
+        max-width: 800px;
+        justify-content: center;
+    }
+
+    .home__content h1 {
+        font-size: 3.375rem;
+        margin-bottom: 2rem;
+    }
+
+    .home__content h2 {
+        max-width: 50%;
+        margin-bottom: 5rem;
+        font-size: 1.125rem;
+    }
+
+    .button__purchase {
+        flex-direction: row;
+    }
+
+    .button__purchase button:first-child {
+        margin: 0 2rem 0 0;
+    }    
+    
+    /* =============== EXPLANATION AND CARDS =============== */
+    .square {
+        width:180px;
+        height:180px;
+    
+        position: absolute;
+        left: 8rem;
+    
+        border-right: 1px solid #FEC024;
+        border-bottom: 1px solid #FEC024;
+        border-left: 1px solid #FEC024;
+    }
+
+    .explanation {
+        padding-bottom: 3rem;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .explanation__text {
+        max-width: 310px;
+        margin-right: 2rem;
+    }
+
+        .explanation__text h2 {
+            font-size: 4rem;
+        }
+
+        .explanation__text p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+    .explanation__content {
+        max-width: 800px;
+        padding: 0;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .explanation__content .card {
+        max-width: 250px;
+        padding: 1rem 1rem;
+        margin: 1rem;
+    }
+        .explanation__content .card h3 {
+            font-size: 0.875rem;
+        }
+
+        .explanation__content .card p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+    .explanation__content > .button__purchase {
+        display: none;
+    }
+
+    .explanation__text > .button__purchase {
+        margin: 2rem 0;
+        display: block;
+    }
+
+    .button__purchase button {
+        padding: 0.8rem 1rem;
+    }
+    
+    /* =================== INSPIRATION AND VALUE =================== */
+    .container__desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .inspiration {
+        max-width: 800px;
+    }
+
+    .value {
+        min-width: 400px;
+        margin: 1rem 0;
+    }
+
+    /* =================== LEARN =================== */
+    .square:nth-child(4) {
+        display: none;
+    }
+
+    .learn__title {
+        display: none;
+    }
+
+    .learn {
+        background: url("../imgs/teacher-bnw-desktop.png") no-repeat center center; 
+        background-size: cover;
+        padding: 8rem 3rem;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .learn__description {
+        margin: 0 auto;
+        max-width: 320px;
+        cursor: pointer;
+    }
+
+    .learn__description:hover {
+        border-bottom: 1px solid var(--orange-dark);
+    }
+
+    .learn__description__desktop {
+        display: block;
+        max-width: 580px;
+
+        padding: 6rem;
+
+        background-color: #262626;
+    }
+
+        .learn__description__desktop  span{
+            color: var(--white);
+
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.7;
+        }
+        
+        .learn__description__desktop  p{
+            color: var(--white);
+
+            font-size: 1.125rem;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .learn__description__desktop button {
+            margin: 2rem 0 0 3rem;
+
+            background-color: transparent;
+            color: var(--white);
+            
+            font-size: 0.9rem;
+            font-weight: 600;
+
+            cursor: pointer;
+        }
+
+        .learn__description__desktop button:last-child {
+            color: var(--orange-dark)
+        }
+
+
+    .learn__description__title {
+        padding: 2rem 3rem 2rem 2rem;
+    }
+
+        .learn__description__title img {
+            display: none;
+        }
+
+        .learn__description__title h3 {
+            font-size: 2rem;
+        }
+
+    .learn__content > .button__purchase {
+        display: none;
+    }
+    
+    /* =================== TEACHER =================== */
+    .teacher {
+        padding-bottom: 6rem;
+        padding-top: 5rem;
+    }
+
+        .teacher h2 {
+            margin-left: 12rem;
+        }
+
+    .teacher__card__container {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .invisible {
+        display: block;
+    }
+    
+    .teacher__card {
+        max-width: 330px;
+        max-height: 500px;
+        padding: 1rem;
+        margin: 1rem 0.5rem;
+    }
+
+        .teacher__card h3 {
+            font-size: 0.9rem;
+        }
+
+        .teacher__card p {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+        
+        .teacher div:last-child {
+            margin: 0rem;
+        }
+
+    .teacher .button__purchase {
+        padding-top: 4rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* =================== DEPOSITIONS =================== */
+    .depositions {
+        background: url("../imgs/opinion-desktop.png")  no-repeat center;
+        height: 85vh;
+        background-size: cover;
+    }
+
+        .depositions h2 {
+            max-width: 800px;
+            padding: 16rem 0 2rem 0;
+        }
+
+        .depositions p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: right;
+        }
+
+    /* =================== CAPACITY =================== */
+    .capacity {
+        padding: 7rem 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .capacity__text {
+        max-width: 340px;
+        margin-right: 3rem;
+    }
+
+        .capacity__text h2 {
+            font-size: 4rem
+        }
+
+        .capacity__text span {
+            font-size: 1.1rem
+        }    
+
+        .capacity__text p {
+            font-size: 1.1rem
+        }
+
+    .capacity > .button__purchase {
+        display: none;
+    }
+
+    .capacity__text > .button__purchase {
+        display: flex;
+        justify-content: start;
+    }
+
+    .capacity__text > .button__purchase > .button__modal {
+        margin-right: 1rem;
+    }
+
+    .capacity ul {
+        max-width: 400px;
+    }
+
+    .capacity ul li h3 {
+        font-size: 0.9rem;
+    }
+    
+
+    
+    /* =================== FIT =================== */
+    .fit {
+        background: url("../imgs/background-negociando-desktop.png")no-repeat center;
+        background-color: black;
+        background-size: cover;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 360px;
+    }
+
+    .fit__content {
+        max-width: 360px;
+        margin-right: 5rem;
+        grid-column: 3;
+    }
+
+        .fit__content h2 {
+            font-size: 4rem;
+        }
+
+        .fit__content span, .fit__content p {
+            font-size: 1.125rem;
+        }
+
+    /* =================== FOOTER =================== */
+    footer {
+        display: flex;
+        justify-content: space-around;
+        height: 150px;
+    }
+
+    footer p:last-child {
+        margin: 0;
+    }
 }

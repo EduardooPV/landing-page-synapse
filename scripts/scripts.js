@@ -1,9 +1,3 @@
-// Campos do formulário devem ser validados tanto em obrigatoriedade quanto em formato. Além disso, os campos Telefone e CPF devem possuir máscaras;
-
-// Utilizar bibliotecas vanilla para carrousel e máscara;
-
-// Utilizar o pacote NodeJS chamado json-server para mockup da API de leads.
-
 var buttonModal = document.getElementsByClassName("button__modal")
 
 // Taking all the "TENHO INTERESSE" buttons and applying the onClick Modal Open
@@ -20,7 +14,6 @@ function openModal() {
 function closeModal() {
     document.querySelector(".modal__background").classList.remove("visible")
 }
-
 
 // Mask telefone modal
 function masktel(objeto, f) {
@@ -47,13 +40,75 @@ function mtel(v) {
     return r;
 }
 
-function openDescription() {
+// Slide Depositions
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    if (description.style.display === "none") {
-        description.style.display = "block"
-    } else {
-        description.style.display = "none"
-    }
-    
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+// ======== ALERTA DE GAMBIARRA POR DESISTENCIA =========== //
+
+function openDescription1() {
+    description1 = document.querySelector('.description1')
+
+    if (description1.style.display === "none") {
+        description1.style.display = "block"
+    } else {
+        description1.style.display = "none"
+    }
+}
+
+function openDescription2() {
+    description2 = document.querySelector('.description2')
+
+    if (description2.style.display === "none") {
+        description2.style.display = "block"
+    } else {
+        description2.style.display = "none"
+    }
+}
+
+function openDescription3() {
+    description3 = document.querySelector('.description3')
+
+    if (description3.style.display === "none") {
+        description3.style.display = "block"
+    } else {
+        description3.style.display = "none"
+    }
+}
+
+function openDescription4() {
+    description4 = document.querySelector('.description4')
+
+    if (description4.style.display === "none") {
+        description4.style.display = "block"
+    } else {
+        description4.style.display = "none"
+    }
+}
