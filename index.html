@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Synapse - Oratária Digital</title>
+    <!-- IMPORTANTE COLOCAR O TITULO INTEIRO DA PÁGINA, MESMO QUE PASSE O LIMITE DE CARACTERE VISIVEL-->
+    <title>Synapse - Oratária Digital Cursos Sobre Bla Bla Bla</title>
 
-    <meta name="description" content="Compre cursos maravilhosos, investimento na sua vida.">
+    <!-- A PARTE MAIS IMPORTANTE DO SEO, SINOPSE DO SITE -->
+    <meta name="description" content="Compre cursos maravilhosos, investimento na sua vida. Uma descrição completa do site.">
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -31,7 +33,7 @@
 
             <!-- FORM BY CLICKING ON "TENHO INTERESSE"-->
             <form action="" id="formulario" name="formulario">
-                <img onclick="closeModal()"  class="close" src="./assets/imgs/cancel.svg">
+                <img role="" onclick="closeModal()"  class="close" src="./assets/imgs/cancel.svg" alt="Fechar o modal 'X' ">
 
                 <h1>LOREM</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
@@ -65,7 +67,7 @@
                     <label for="termos">Li e aceito os <a href="#">termos de uso.</a></label>
                 </div>
 
-                <button class="submit">DECLARAR INTERESSE</button>
+                <button class="submit" role="button">DECLARAR INTERESSE</button>
             </form>
 
         </div>
@@ -91,7 +93,6 @@
                 <button>Quero comprar</button>
             </div>
             
-
         </div>
 
     </section>
@@ -104,7 +105,7 @@
         <section class="explanation container">
             
             <!-- PRESENTATION TEXT -->
-            <div class="explanation__text">
+            <article class="explanation__text">
                 <h2>Sem clientes?</h2>
                 <p>Esta seção visa explicar resumidamente o curso. </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor</p>
@@ -113,10 +114,10 @@
                     <button class="button__modal">Tenho interesse</button>
                     <button>Quero comprar</button>
                 </div>
-            </div>
+            </article>
 
             <!-- CARD CONTAINER  -->
-            <div class="explanation__content">
+            <article class="explanation__content">
 
                 <!-- CARDS -->
                 <div class="card">
@@ -151,25 +152,27 @@
                     <button class="button__modal">Tenho interesse</button>
                     <button>Quero comprar</button>
                 </div>
-            </div>
+            </article>
         </section>
 
         <!-- "INSPIRATION" and ""VALUE"- TEXT INSPIRATION -->
-        <div class="container__desktop">
+        <section class="container__desktop">
             <div class="inspiration__background"></div>
             <div class="inspiration__background__black"></div>
-            <section class="inspiration  inspiration__container__black ">
+            <article class="inspiration  inspiration__container__black ">
             
-                <p>Chegou a sua hora de brilhar lorem ipsum dolor sit amet</p>
+                <h2>Chegou a sua hora de brilhar lorem ipsum dolor sit amet</h2>
             
-            </section>
+            </article>
 
             <!-- "VALUE" - Course fee -->
-            <section class="value container">
-                <p>R$ 5.000,00</p>
+            <article class="value container">
+
+                <h2>R$ 5.000,00</h2>
                 <button>FAZER O CURSO</button>
-            </section>
-        </div>
+
+            </article>
+        </section>
 
         <!-- "LEARN" - WHAT WILL YOU LEARN ON THE COURSE -->
         <div class="square "></div>
@@ -185,7 +188,7 @@
 
                     <div onClick="openDescription1()" class="learn__description__title">
                         <h3>Competências 1</h3>
-                        <img class="img" src="./assets/imgs/arrowup.png" alt="">
+                        <img class="img" src="./assets/imgs/arrowup.png" alt="Arrow">
                     </div>
     
                     <div id="description" class="description1">
@@ -196,7 +199,7 @@
                 <div class="learn__description">
                     <div  onClick="openDescription2()"  class="learn__description__title">
                         <h3>Competências 2</h3>
-                        <img class="img" src="./assets/imgs/arrowup.png" alt="">
+                        <img class="img" src="./assets/imgs/arrowup.png" alt="Arrow">
                     </div>
     
                     <div id="description" class="description2">
@@ -207,7 +210,7 @@
                 <div class="learn__description">
                     <div  onClick="openDescription3()"  class="learn__description__title">
                         <h3>Competências 3</h3>
-                        <img class="img" src="./assets/imgs/arrowup.png" alt="">
+                        <img class="img" src="./assets/imgs/arrowup.png" alt="Arrow">
                     </div>
     
                     <div id="description" class="description3">
@@ -218,7 +221,7 @@
                 <div class="learn__description">
                     <div  onClick="openDescription4()"  class="learn__description__title">
                         <h3>Competências 4</h3>
-                        <img class="img" src="./assets/imgs/arrowup.png" alt="">
+                        <img class="img" src="./assets/imgs/arrowup.png" alt="Arrow">
                     </div>
     
                     <div id="description" class="description4">
@@ -233,12 +236,12 @@
 
             </div>
 
-            <div class="learn__description__desktop">
+            <aside class="learn__description__desktop">
                 <p> <span>Esta seção visa explicar as competências que os alunos possuirão uma vez que concluírem o curso.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris.</p>
 
                 <button class="button__modal">TENHO INTERESSE</button>
                 <button>COMPRE AGORA</button>
-            </div>
+            </aside>
 
         </section>
         
@@ -343,6 +346,7 @@
                 <div class="mySlides fade">
 
                     <h2>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom mesmo"</h2>
+
                     <p>Fulano de tal,</br> médico muito conceituado</p>
 
                 </div>
@@ -350,6 +354,7 @@
                 <div class="mySlides fade">
 
                     <h2>"Adorei o curso, com ótimos professores e todos ótimos profissionais qualificados"</h2>
+
                     <p>O tal do fulano,</br> psicologo muito conceituado</p>
 
                 </div>
@@ -357,6 +362,7 @@
                 <div class="mySlides fade">
 
                     <h2>"Adorei o curso"</h2>
+
                     <p>Fulano de poucas palavras</p>
                     
                 </div>
@@ -379,8 +385,10 @@
         <div class="square"></div>
         <section class="capacity container">
 
-            <div class="capacity__text">
+            <article class="capacity__text">
+
                 <h2>Capacidade de aprender</h2>
+
                 <span>Esta seção visa explicar as metodologias de ensino empregadas. </span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae.</p>
 
@@ -388,38 +396,47 @@
                     <button class="button__modal">Tenho interesse</button>
                     <button>Quero comprar</button>
                 </div>  
-            </div>
 
-            <ul type="circle">
-                <li>
-                    <div>
-                        <div class="circle"></div>
-                        <h3>Metodologia 1</h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                </li>
-                <li>
-                    <div>
-                        <div class="circle"></div>
-                        <h3>Metodologia 2</h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                </li>
-                <li>
-                    <div>
-                        <div class="circle"></div>
-                        <h3>Metodologia 3</h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                </li>
-                <li>
-                    <div>
-                        <div class="circle"></div>
-                        <h3>Metodologia 4</h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                </li>
-            </ul>
+            </article>
+
+            <article>
+
+                <ul type="circle">
+                    <li>
+                        <div>
+                            <div class="circle"></div>
+                            <h3>Metodologia 1</h3>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="circle"></div>
+                            <h3>Metodologia 2</h3>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="circle"></div>
+                            <h3>Metodologia 3</h3>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="circle"></div>
+                            <h3>Metodologia 4</h3>
+                        </div>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </li>
+                </ul>
+
+            </article>
 
             <div class="button__purchase">
                 <button class="button__modal">Tenho interesse</button>
@@ -432,19 +449,20 @@
         <div class="square"></div>
         <section class="fit container">
 
-            <div class="fit__content">
-                <h2>Eu estou <br> Apto?</h2>
-            
-                <span>Esta seção visa explicar quem é a persona que o curso quer atingir.</span>
+            <aside class="fit__content">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae.</p>
-
-                <div class="button__purchase">
-                    <button class="button__modal">Tenho interesse</button>
-                    <button>Quero comprar</button>
-                </div>  
+                    <h2>Eu estou <br> Apto?</h2>
                 
-            </div>
+                    <span>Esta seção visa explicar quem é a persona que o curso quer atingir.</span>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae.</p>
+    
+                    <div class="button__purchase">
+                        <button class="button__modal">Tenho interesse</button>
+                        <button>Quero comprar</button>
+                    </div>  
+
+            </aside>
 
         </section>
         
