@@ -35,14 +35,17 @@
     height:100vh;
 
     position: fixed;
-    display: none;
     background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    pointer-events: none;
 
     z-index: 10;
 }
 
 .visible {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s;
 }
 
 .modal {
@@ -57,6 +60,7 @@
 
     border-radius: 5px;
     transform: translate(-50%, -50%);
+
 }
 
     .modal form{
@@ -562,7 +566,10 @@
     max-width: 1000px;
     height: 80%;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
 }
   
 .prev, .next {
@@ -570,19 +577,24 @@
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
+    padding: 32px;
     margin-top: -22px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 50%;
     user-select: none;
+}
+
+.prev:hover, .next:hover {
+    background: white;
+    color: black;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 50%;
 }
   
 .dot {
@@ -598,6 +610,10 @@
   
 .active, .dot:hover {
     background-color: #5c5c5c;
+}
+
+.mySlides {
+    margin: 0 auto;
 }
   
 .fade {
@@ -693,8 +709,9 @@ ul div {
 .fit {
     padding: 4rem 2rem;
 
-    background: url("../imgs/background-negociando-mobile.png")no-repeat center;
+    background: url("../imgs/background-negociando-mobile.png")no-repeat;
     background-size: cover;
+    background-color: black;
 }
 
     .fit h2 {
@@ -1006,7 +1023,6 @@ footer p:last-child {
 
         .depositions h2 {
             max-width: 800px;
-            padding: 16rem 0 2rem 0;
         }
 
         .depositions p {
@@ -1072,7 +1088,7 @@ footer p:last-child {
         background-size: cover;
 
         display: grid;
-        grid-template-columns: 1fr 1fr 380px;
+        grid-template-columns: 1fr 1fr 400px;
     }
 
     .fit__content {
