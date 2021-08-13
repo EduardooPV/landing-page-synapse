@@ -68,47 +68,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// Abrindo e fechando as descrições 
+let description = document.querySelectorAll(".learn__description")
+let img = document.querySelectorAll('.img')
 
-
-
-// ======== ALERTA DE GAMBIARRA POR DESISTENCIA =========== //
-
-function openDescription1() {
-    description1 = document.querySelector('.description1')
-
-    if (description1.style.display === "none") {
-        description1.style.display = "block"
-    } else {
-        description1.style.display = "none"
-    }
-}
-
-function openDescription2() {
-    description2 = document.querySelector('.description2')
-
-    if (description2.style.display === "none") {
-        description2.style.display = "block"
-    } else {
-        description2.style.display = "none"
-    }
-}
-
-function openDescription3() {
-    description3 = document.querySelector('.description3')
-
-    if (description3.style.display === "none") {
-        description3.style.display = "block"
-    } else {
-        description3.style.display = "none"
-    }
-}
-
-function openDescription4() {
-    description4 = document.querySelector('.description4')
-
-    if (description4.style.display === "none") {
-        description4.style.display = "block"
-    } else {
-        description4.style.display = "none"
-    }
-}
+description.forEach( description => {
+    description.addEventListener("click", function openDescription() {     
+        if(window.innerWidth < 768) {
+            if(description.lastElementChild.style.display == 'block') {
+                description.lastElementChild.style.display = 'none'
+                description.firstElementChild.lastElementChild.style.transform = 'rotate(0)'
+            } else {
+                description.lastElementChild.style.display = 'block'
+                description.firstElementChild.lastElementChild.style.transform = 'rotate(180deg)'
+                description.firstElementChild.lastElementChild.style.transition = '0.5s'
+            }
+        } 
+    })
+})

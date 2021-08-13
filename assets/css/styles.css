@@ -380,7 +380,9 @@
         font-size: 3rem; 
         letter-spacing: 1.01px;
     }
-
+    .learn__description {
+        transition: all 1s;
+    }
     .learn__description__title { 
         padding: 0.6rem 1rem;
         
@@ -404,55 +406,7 @@
 
     /* ======== ALERTA DE GAMBIARRA POR DESISTENCIA =========== */
 
-    .description1 {
-        padding: 1rem;
-        
-        display: none;
-
-        border-top: 1px solid var(--orange-dark);
-        border-bottom: 1px solid var(--orange-dark);
-
-        color: var(--white);
-        background-color: #262626;
-
-        font-weight: 300;
-        line-height: 1.8;
-        font-size: 1.3rem;
-    }
-
-    .description2 {
-        padding: 1rem;
-        
-        display: none;
-
-        border-top: 1px solid var(--orange-dark);
-        border-bottom: 1px solid var(--orange-dark);
-
-        color: var(--white);
-        background-color: #262626;
-
-        font-weight: 300;
-        line-height: 1.8;
-        font-size: 1.3rem;
-    }
-
-    .description3 {
-        padding: 1rem;
-        
-        display: none;
-
-        border-top: 1px solid var(--orange-dark);
-        border-bottom: 1px solid var(--orange-dark);
-
-        color: var(--white);
-        background-color: #262626;
-
-        font-weight: 300;
-        line-height: 1.8;
-        font-size: 1.3rem;
-    }
-
-    .description4 {
+    .description {
         padding: 1rem;
         
         display: none;
